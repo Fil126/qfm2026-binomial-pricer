@@ -60,7 +60,7 @@ def plot_convergence_html(results_dict, save_path="convergence_comparison.html")
     fig.add_trace(go.Scatter(
         x=[x_min, x_max], y=[bsm, bsm],
         mode="lines",
-        line=dict(color="#c00000", width=1.5, dash="dash"),
+        line=dict(color="#404040", width=1.5, dash="dash"),
         name=f"BSM  {bsm:.4f}",
     ), row=1, col=1)
 
