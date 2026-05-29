@@ -4,6 +4,8 @@
 
 A from-scratch Python implementation of binomial tree option pricers (CRR and Jarrow-Rudd), with convergence analysis, production benchmarking, and model-risk assessment against the Black-Scholes-Merton closed form.
 
+**Interactive Animation:** [CRR vs JR vs Richardson — Convergence to BSM](https://fil126.github.io/qfm2026-binomial-pricer/graphs/convergence_comparison.html)
+
 ---
 
 ## Repository Structure
