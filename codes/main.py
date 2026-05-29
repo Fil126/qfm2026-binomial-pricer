@@ -10,6 +10,7 @@ from crr_engine import crr_price, jr_price, bsm_price, richardson_price
 from convergence_plot import (convergence_analysis,
                               plot_convergence_comparison, plot_threshold_scan,
                               plot_crr_jr_model_risk_prices)
+from convergence_animated import plot_convergence_html
 
 # Reference parameters (memo Section 2.2)
 S0    = 100.0
@@ -98,6 +99,12 @@ def main():
     plot_convergence_comparison(
         {"CRR": crr_results, "JR": jr_results, "Richardson": ric_results},
         save_path=os.path.join(GRAPH_DIR, "convergence_comparison.png")
+    )
+
+    # Interactive HTML animation
+    plot_convergence_html(
+        {"CRR": crr_results, "JR": jr_results, "Richardson": ric_results},
+        save_path=os.path.join(GRAPH_DIR, "convergence_comparison.html")
     )
 
     # Convergence slopes

@@ -214,12 +214,12 @@ def plot_threshold_scan(N_values, errors_pct_dict, threshold=0.05,
         )
         if stable_idx is not None:
             ci = stable_idx
-            ax.axvline(N[ci], color=style["color"], linewidth=0.8,
-                       linestyle=":", alpha=0.6)
+            ax.axvline(N[ci], color=style["color"], linewidth=1.8,
+                       linestyle="--", alpha=0.9)
             ax.annotate(
                 f"N={N[ci]}\n(stable)",
                 xy=(N[ci], errs[ci]),
-                xytext=(N[ci] * 1.1, errs[ci] * 2.0),
+                xytext=(N[ci] * 1.1, errs[ci] * 5.0),
                 fontsize=8, color=style["color"],
                 arrowprops=dict(arrowstyle="->", color=style["color"], lw=0.7)
             )

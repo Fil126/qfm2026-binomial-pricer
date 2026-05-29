@@ -13,8 +13,9 @@ A from-scratch Python implementation of binomial tree option pricers (CRR and Ja
 │   ├── crr_engine.py          # Core pricing engine
 │   ├── convergence_plot.py    # Visualization module
 │   └── main.py                # Entry point — runs all four parts
-├── graphs/                    # Output figures (PNG, 300 DPI)
+├── graphs/                    # Output figures (PNG, 300 DPI) and interactive HTML
 │   ├── convergence_comparison.png
+│   ├── convergence_comparison.html  # Interactive animation (Plotly)
 │   ├── eu_threshold_scan.png
 │   └── crr_jr_model_risk_prices.png
 └── reference paper/
@@ -97,6 +98,7 @@ Runs the full analysis in four parts with reference parameters `S0=100, K=100, T
 numpy
 scipy
 matplotlib
+plotly
 ```
 
 Install with:
